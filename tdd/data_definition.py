@@ -352,6 +352,13 @@ c40 = Definitions(
                     Definition("42", "Situation du foyer", 0, None, StringAZ),
                     Definition("43", "Nombre de parts", 0, None, Numeric),
                     Definition("44", "Référence d’avis d’impôt", 13, 13, Numeric0),
+                    Definition("45", "Année des revenus", 4, 4, Numeric0),
+                    Definition("46", "Déclarant 1", 0, 38, StringAZ09),
+                    Definition("47", "Numéro fiscal du déclarant 1", 13, 13, Numeric0),
+                    Definition("48", "Déclarant 2", 0, 38, StringAZ09),
+                    Definition("49", "Numéro fiscal du déclarant 2", 13, 13, Numeric0),
+                    Definition("4A", "Date de mise en recouvrement", 8, 8, JJMMAAAA),
+                    Definition("4B", "Date de la déclaration", 8, 8, JJMMAAAA),
               ),
 
               Group("Identifiants de données relatives à l’activité professionnelle",
@@ -462,6 +469,7 @@ c40 = Definitions(
                     Definition("83", "Organisme de tutelle", 0, 40, StringAZ09Sp),
                     Definition("84", "Profession", 0, 40, StringAZ09Sp),
                     Definition("85", "Numéro de permis de chasser", 17, 17, StringAZ09Dash),
+                    Definition("86", "Numéro de licence", 12, 12, StringAZ09),
               ),
 
               Group("Identifiants relatifs aux données juridiques/judiciaires",
