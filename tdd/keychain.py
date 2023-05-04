@@ -180,12 +180,12 @@ def internal():
     import pkg_resources
 
     k = KeyChain()
-    for chain in ["FR01", "FR02", "FR03", "FR04"]:
-        chain_name = "chains/" + chain + ".der"
+    for chain in ["FR01", "FR02", "FR03", "FR04", "FR05"]:
+        chain_name = "chains/new/" + chain + ".der"
         fd = pkg_resources.resource_stream(__name__, chain_name)
         k.der_multipart_load(fd)
-    fd = pkg_resources.resource_stream(__name__, "chains/FR00.der")
-    k.der_add(fd.read())
+    # fd = pkg_resources.resource_stream(__name__, "chains/FR00.der")
+    # k.der_add(fd.read())
     return k
 
 if __name__ == "__main__":
